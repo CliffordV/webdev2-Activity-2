@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="icon" type="image/png" href="icn.png">
+		<title>Days Left until my Birthday</title>
+		<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+		<style>
+			body {
+				text-align: center;
+				margin: 0 auto;
+				font-family: helvetica;
+				background-image: url("bckground.jpg");
+				background-size: 1366px 690px;
+				background-repeat: no-repeat;
+			}
+			input {
+				border: 0;
+				padding: 10px;
+				font-size: 16px;
+				font-family: helvetica;
+				width: 500px;
+			}
+			input[type="submit"] {
+				background: rgba(0,0,0,0.7);
+				color: white;
+				margin-top: 30px;
+				width: 200px;
+			}
+			img {
+				margin: 50px auto -50px auto;
+				width: 20%;
+				height: 20%;
+			}
+			input {
+				background-color: rgba(50,50,50,0.5);
+				color: white;
+				}
+			h1 {
+				font-family: 'Bangers', Georgia, Serif;
+				font-size: 4em;
+				text-shadow: 3px 3px white;
+				color: rgba(50, 50, 50, 1);
+			}
+			h2 {
+				font-family: 'Bangers', Georgia, Serif;
+				text-shadow: 2px 2px white;
+				color: rgba(50, 50, 50, 1);
+				}
+			::-webkit-input-placeholder{
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<br/><br/><h1>How many days until my BIRTHDAY</h1>
+		<form action="displayLeftdays.cgi" name="sampleform" method="POST">
+			<h2>Enter your Birthday:</h2>
+			<input type="number" min = "1" max= "12" style= "width: 100px;" name="month" placeholder="Month" required=required autofocus>
+			<input type="number" min="1" max="31" style= "width: 50px;" name="day" placeholder="Day" required=required autofocus>
+			<input type="number" min="1900" max="2100" style= "width: 70px;" name="year" placeholder="Year" required=required autofocus><br/><br/>
+			<input type="submit" name="submit" value="Submit"><br/><br/><br/><br/>
+		</form>
+	</body>
+</html>  
